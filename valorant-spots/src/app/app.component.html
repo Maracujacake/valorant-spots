@@ -1,3 +1,8 @@
-<app-navbar></app-navbar>
-<app-content-area></app-content-area>
+<app-navbar (selecionarConteudo)="atualizarConteudo($event)"></app-navbar>
+<div>
+    <app-inicial *ngIf="conteudoAtual === 'conteudoInicial'"></app-inicial>
+    <app-astra *ngIf="conteudoAtual === 'conteudoAstra'"></app-astra>
+    <app-breach *ngIf="conteudoAtual === 'conteudoBreach'"></app-breach>
+    
+</div>
 <router-outlet />

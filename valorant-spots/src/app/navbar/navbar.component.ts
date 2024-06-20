@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import { Component, EventEmitter, Output } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -8,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  @Output() selecionarConteudo = new EventEmitter<string>();
 
+  onDivClick(conteudo: string) {
+    this.selecionarConteudo.emit(conteudo);
+  }
 }

@@ -1,0 +1,106 @@
+/* astra */ $img1: url(https://server.blix.gg/imgproxy/7sIhoJrY4eoQ6kRARs6rTX3390b4uKPbLWu90hFl_lI/rs:fit:260:260:0/g:no/aHR0cDovL21pbmlvOjkwMDAvaW1hZ2VzL2NmYWVkODk0OGI0YzRlZjE4ZDk5Y2MwYjc0NjNlYTU5LnBuZw.webp);
+/* breach */ $img2: url(https://server.blix.gg/imgproxy/RA8nvfnHAmKAM4XETPnuPVAn1TDGMhPlghrxgJ-d9zs/rs:fit:260:260:0/g:no/aHR0cDovL21pbmlvOjkwMDAvaW1hZ2VzLzAzYWViNTllODRjNDQ4N2U4ZmMyYWQ5NTQ3M2FjZTVmLnBuZw.webp);
+/* brimstone */ $img3: url(https://static.wikia.nocookie.net/valorant/images/4/4d/Brimstone_icon.png/revision/latest?cb=20220314032309&path-prefix=id);
+/* chamber */ $img4: url(https://static.wikia.nocookie.net/valorant/images/0/09/Chamber_icon.png/revision/latest/smart/width/250/height/250?cb=20230523180616);
+/* cypher */ $img5: url(https://static.wikia.nocookie.net/valorant/images/8/88/Cypher_icon.png/revision/latest/smart/width/250/height/250?cb=20230523180623);
+/* fade */ $img6: url(https://static.wikia.nocookie.net/valorant/images/a/a6/Fade_icon.png/revision/latest/smart/width/250/height/250?cb=20230523161332);
+/* gekko */ $img7: url(https://pbs.twimg.com/media/FuSGGsUWAAMol0L.png);
+/* jett */ $img8: url(https://static.wikia.nocookie.net/valorant/images/3/35/Jett_icon.png/revision/latest/smart/width/250/height/250?cb=20230909031447);
+/* kay/o */ $img9: url(https://cdn3.emoji.gg/emojis/5454-valorant-kayo-icon.png);
+/* killjoy */ $img10: url(https://server.blix.gg/imgproxy/PqoaSntsPnXezjLQyrP_Mki4v9hlBMrEa02DsXaRREk/rs:fit:260:260:0/g:no/aHR0cHM6Ly9zdGF0aWMud2lraWEubm9jb29raWUubmV0L3ZhbG9yYW50L2ltYWdlcy8xLzE1L0tpbGxqb3lfaWNvbi5wbmc.webp);
+/* neon */ $img11: url(https://static.wikia.nocookie.net/valorant/images/d/d0/Neon_icon.png/revision/latest/smart/width/250/height/250?cb=20230523180744);
+/* omen */ $img12: url(https://static.wikia.nocookie.net/valorant/images/b/b0/Omen_icon.png/revision/latest/smart/width/250/height/250?cb=20230523180801);
+/* phoenix */ $img13: url(https://static.wikia.nocookie.net/valorant/images/1/14/Phoenix_icon.png/revision/latest?cb=20220316150508&path-prefix=id);
+/* raze */ $img14: url(https://static.wikia.nocookie.net/valorant/images/9/9c/Raze_icon.png/revision/latest/smart/width/250/height/250?cb=20230523180834);
+/* reyna */ $img15: url(https://static.wikia.nocookie.net/valorant-lore/images/b/b8/Reyna_-_Avatar.png/revision/latest/scale-to-width-down/250?cb=20230629181414);
+/* sage */ $img16: url(https://static.wikia.nocookie.net/valorant/images/7/74/Sage_icon.png/revision/latest?cb=20220316150523&path-prefix=id);
+/* skye */ $img17: url(https://static.wikia.nocookie.net/valorant/images/3/33/Skye_icon.png/revision/latest/smart/width/250/height/250?cb=20230606161546);
+/* sova */ $img18: url(https://static.wikia.nocookie.net/valorant/images/4/49/Sova_icon.png/revision/latest/smart/width/250/height/250?cb=20230523180933);
+/* viper */ $img19: url(https://static.wikia.nocookie.net/valorant/images/5/5f/Viper_icon.png/revision/latest/smart/width/250/height/250?cb=20230523180950);
+/* yoru */ $img20: url(https://static.wikia.nocookie.net/valorant/images/d/d4/Yoru_icon.png/revision/latest/smart/width/250/height/250?cb=20230606161616);
+
+.navbar-img{
+    background-size: cover;
+    background-position: center;
+}
+
+.img1{
+    background-image: $img1;
+}
+
+.img2{
+    background-image: $img2;
+}
+
+.img3{
+    background-image: $img3;
+}
+
+.img4{
+    background-image: $img4;
+}
+
+.img5{
+    background-image: $img5;
+}
+
+.img6{
+    background-image: $img6;
+}
+
+.img7{
+    background-image: $img7;
+}
+
+.img8{
+    background-image: $img8;
+}
+
+.img9{
+    background-image: $img9;
+}
+
+.img10{
+    background-image: $img10;
+}
+
+.img11{
+    background-image: $img11;
+}
+
+.img12{
+    background-image: $img12;
+}
+
+.img13{
+    background-image: $img13;
+}
+
+.img14{
+    background-image: $img14;
+}
+
+.img15{
+    background-image: $img15;
+}
+
+.img16{
+    background-image: $img16;
+}
+
+.img17{
+    background-image: $img17;
+}
+
+.img18{
+    background-image: $img18;
+}
+
+.img19{
+    background-image: $img19;
+}
+
+.img20{
+    background-image: $img20;
+}
+
