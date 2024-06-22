@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './astra.component.html',
   styleUrl: './astra.component.scss'
+  
 })
 export class AstraComponent {
 
