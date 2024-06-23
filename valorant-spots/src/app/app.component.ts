@@ -9,6 +9,17 @@ import { CommonModule } from '@angular/common';
 import { BrimstoneComponent } from './conteudos/brimstone/brimstone.component';
 import { ChamberComponent } from './conteudos/chamber/chamber.component';
 import { CypherComponent } from './conteudos/cypher/cypher.component';
+import { FadeComponent } from './conteudos/fade/fade.component';
+import { GekkoComponent } from './conteudos/gekko/gekko.component';
+import { JettComponent } from './conteudos/jett/jett.component';
+import { KayoComponent } from './conteudos/kayo/kayo.component';
+import { KilljoyComponent } from './conteudos/killjoy/killjoy.component';
+import { NeonComponent } from './conteudos/neon/neon.component';
+import { OmenComponent } from './conteudos/omen/omen.component';
+import { PhoenixComponent } from './conteudos/phoenix/phoenix.component';
+import { RazeComponent } from './conteudos/raze/raze.component';
+import { ReynaComponent } from './conteudos/reyna/reyna.component';
+import { SageComponent } from './conteudos/sage/sage.component';
 
 
 @Component({
@@ -16,8 +27,11 @@ import { CypherComponent } from './conteudos/cypher/cypher.component';
   standalone: true,
   imports: [RouterOutlet, NavbarComponent, ContentAreaComponent,
             AstraComponent, BreachComponent, BrimstoneComponent, ChamberComponent,
-            CypherComponent, InicialComponent,
-            CommonModule],
+            CypherComponent, FadeComponent, GekkoComponent, 
+            JettComponent, KayoComponent, KilljoyComponent, NeonComponent, 
+            OmenComponent, PhoenixComponent, RazeComponent, ReynaComponent,
+            SageComponent,
+            InicialComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
