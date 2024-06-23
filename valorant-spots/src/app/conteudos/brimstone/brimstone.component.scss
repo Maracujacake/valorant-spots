@@ -22,7 +22,7 @@ $fonte-primaria: 'Roboto', sans-serif;
 .fundo {
     height: 100%; 
     width: 100%;
-    background: linear-gradient(45deg, #f95402, #613b24, #a59b95, #a81f6a);
+    background: linear-gradient(45deg, #ff3f4c, #8996a6, #1a222e, #a81f6a);
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
 }
@@ -38,10 +38,11 @@ $fonte-primaria: 'Roboto', sans-serif;
         background-position: 0% 50%;
     }
 }
+
 /*
 .titulo{
     font-family: $fonte-primaria;
-    background: linear-gradient(to right, #fff0f2, #ff006a, #9123f9);
+    background: linear-gradient(to right,);
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;

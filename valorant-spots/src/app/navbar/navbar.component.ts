@@ -12,4 +12,10 @@ export class NavbarComponent {
   onDivClick(conteudo: string) {
     this.selecionarConteudo.emit(conteudo);
   }
+
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }

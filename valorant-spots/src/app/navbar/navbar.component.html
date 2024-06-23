@@ -1,9 +1,42 @@
 <nav class="bg-gray-800">
   <div class="flex justify-between items-center p-5">
     <div class="flex items-center">
-      <div class="bg-white w-12 h-12 mx--15"></div> <!-- Primeira div colada à esquerda -->
+      <div class="bg-white w-12 h-12 mx--15 logo" (click)="onDivClick('conteudoInicial')"></div> <!-- logo -->
     </div>
-    <div class="flex items-center space-x-2"> <!-- ESSA AQUI Container para centralizar as outras divs -->
+    <div class="hidden lg:flex items-center space-x-2">
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img1" (click)="onDivClick('conteudoAstra')"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img2" (click)="onDivClick('conteudoBreach')"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img3" (click)="onDivClick('conteudoBrimstone')"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img4"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img5"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img6"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img7"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img8"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img9"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img10"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img11"></div>
+    </div>
+    <div class="hidden lg:flex items-center space-x-2">
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img12"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img13"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img14"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img15"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img16"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img17"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img18"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img19"></div>
+      <div class="rounded-full bg-white w-12 h-12 navbar-img img20"></div>
+    </div>
+    <div class="lg:hidden">
+      <button class="text-white" (click)="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div [class.hidden]="!menuOpen" class="lg:hidden">
+    <div class="flex flex-col items-center space-y-2">
       <div class="rounded-full bg-white w-12 h-12 navbar-img img1" (click)="onDivClick('conteudoAstra')"></div>
       <div class="rounded-full bg-white w-12 h-12 navbar-img img2" (click)="onDivClick('conteudoBreach')"></div>
       <div class="rounded-full bg-white w-12 h-12 navbar-img img3"></div>
@@ -15,8 +48,6 @@
       <div class="rounded-full bg-white w-12 h-12 navbar-img img9"></div>
       <div class="rounded-full bg-white w-12 h-12 navbar-img img10"></div>
       <div class="rounded-full bg-white w-12 h-12 navbar-img img11"></div>
-    </div>
-    <div class="flex items-center space-x-2"> <!-- ESSA AQUI TBM -->
       <div class="rounded-full bg-white w-12 h-12 navbar-img img12"></div>
       <div class="rounded-full bg-white w-12 h-12 navbar-img img13"></div>
       <div class="rounded-full bg-white w-12 h-12 navbar-img img14"></div>
@@ -29,4 +60,3 @@
     </div>
   </div>
 </nav>
-  
