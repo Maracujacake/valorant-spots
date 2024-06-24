@@ -4,29 +4,21 @@
       <div class="bg-white w-12 h-12 mx--15 logo" (click)="onDivClick('conteudoInicial')"></div> <!-- logo -->
     </div>
     <div class="hidden lg:flex items-center space-x-2">
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img1" (click)="onDivClick('conteudoAstra')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img2" (click)="onDivClick('conteudoBreach')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img3" (click)="onDivClick('conteudoBrimstone')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img4" (click)="onDivClick('conteudoChamber')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img5" (click)="onDivClick('conteudoCypher')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img6" (click)="onDivClick('conteudoFade')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img7" (click)="onDivClick('conteudoGekko')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img8" (click)="onDivClick('conteudoJett')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img9" (click)="onDivClick('conteudoKayo')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img10"(click)="onDivClick('conteudoKilljoy')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img11"(click)="onDivClick('conteudoNeon')"></div>
+      <div *ngFor = "let item of itemsNavbar1; let i = index"
+      class="rounded-full bg-white w-12 h-12 navbar-img" 
+      [ngClass] = " 'img' + (i + 1)"
+      (click)="onDivClick('conteudo' + item)">
+      </div>
     </div>
+
     <div class="hidden lg:flex items-center space-x-2">
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img12" (click)="onDivClick('conteudoOmen')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img13" (click)="onDivClick('conteudoPhoenix')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img14" (click)="onDivClick('conteudoRaze')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img15" (click)="onDivClick('conteudoReyna')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img16" (click)="onDivClick('conteudoSage')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img17" (click)="onDivClick('conteudoSkye')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img18" (click)="onDivClick('conteudoSova')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img19" (click)="onDivClick('conteudoViper')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img20" (click)="onDivClick('conteudoYoru')"></div>
+      <div *ngFor = "let item of itemsNavbar2; let i = index"
+      class="rounded-full bg-white w-12 h-12 navbar-img"
+      [ngClass] = " 'img' + (i + 12)"
+      (click)="onDivClick('conteudo' + item)">
+      </div>
     </div>
+    
     <div class="lg:hidden">
       <button class="text-white" (click)="toggleMenu()">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -37,26 +29,10 @@
   </div>
   <div [class.hidden]="!menuOpen" class="lg:hidden">
     <div class="flex flex-col items-center space-y-2">
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img1" (click)="onDivClick('conteudoAstra')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img2" (click)="onDivClick('conteudoBreach')"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img3"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img4"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img5"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img6"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img7"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img8"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img9"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img10"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img11"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img12"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img13"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img14"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img15"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img16"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img17"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img18"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img19"></div>
-      <div class="rounded-full bg-white w-12 h-12 navbar-img img20"></div>
+      <div *ngFor = "let item of itemsMobile; let i = index"
+      class="rounded-full bg-white w-12 h-12 navbar-img"
+      [ngClass] = "'img' + (i + 1)"
+      (click)="onDivClick('conteudo' + item)" ></div>
     </div>
   </div>
 </nav>

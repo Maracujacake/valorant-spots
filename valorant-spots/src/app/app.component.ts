@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Type } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContentAreaComponent } from './content-area/content-area.component';
@@ -41,6 +41,36 @@ import { YoruComponent } from './conteudos/yoru/yoru.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
+  componentMap: { [key: string]: Type<any> } = {
+    'conteudoInicial': InicialComponent,
+    'conteudoAstra': AstraComponent,
+    'conteudoBreach': BreachComponent,
+    'conteudoBrimstone': BrimstoneComponent,
+    'conteudoChamber': ChamberComponent,
+    'conteudoCypher': CypherComponent,
+    'conteudoFade': FadeComponent,
+    'conteudoGekko': GekkoComponent,
+    'conteudoJett': JettComponent,
+    'conteudoKAY/O': KayoComponent,
+    'conteudoKilljoy': KilljoyComponent,
+    'conteudoNeon': NeonComponent,
+    'conteudoOmen': OmenComponent,
+    'conteudoPhoenix': PhoenixComponent,
+    'conteudoRaze': RazeComponent,
+    'conteudoReyna': ReynaComponent,
+    'conteudoSage': SageComponent,
+    'conteudoSkye': SkyeComponent,
+    'conteudoSova': SovaComponent,
+    'conteudoViper': ViperComponent,
+    'conteudoYoru': YoruComponent
+  }
+
+  contentList = Object.keys(this.componentMap).map(nome => ({
+    nome: this.componentMap[nome],
+    conteudo: nome
+  }));
+
   title = 'valorant-spots';
   conteudoAtual: string = "conteudoInicial";
 
