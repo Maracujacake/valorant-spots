@@ -19,7 +19,16 @@
         margin-bottom: 20px;
         animation: fadeInDown 1s ease-in-out;
       }
-  
+
+      .neon-text {
+        font-size: 3rem;
+        color: #ffffff;
+        text-shadow: 
+          0 0 5px #599eac,
+          0 0 10px #599eac,
+          0 0 15px #599eac,
+      }
+
       .description {
         font-size: 1.2rem;
         color: #e0e0e0;

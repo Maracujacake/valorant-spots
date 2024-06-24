@@ -20,6 +20,10 @@ import { PhoenixComponent } from './conteudos/phoenix/phoenix.component';
 import { RazeComponent } from './conteudos/raze/raze.component';
 import { ReynaComponent } from './conteudos/reyna/reyna.component';
 import { SageComponent } from './conteudos/sage/sage.component';
+import { SkyeComponent } from './conteudos/skye/skye.component';
+import { SovaComponent } from './conteudos/sova/sova.component';
+import { ViperComponent } from './conteudos/viper/viper.component';
+import { YoruComponent } from './conteudos/yoru/yoru.component';
 
 
 @Component({
@@ -30,7 +34,8 @@ import { SageComponent } from './conteudos/sage/sage.component';
             CypherComponent, FadeComponent, GekkoComponent, 
             JettComponent, KayoComponent, KilljoyComponent, NeonComponent, 
             OmenComponent, PhoenixComponent, RazeComponent, ReynaComponent,
-            SageComponent,
+            SageComponent, SkyeComponent, SovaComponent, ViperComponent,
+            YoruComponent,
             InicialComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

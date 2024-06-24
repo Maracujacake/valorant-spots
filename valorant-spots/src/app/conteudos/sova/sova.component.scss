@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+$fonte-primaria: 'Roboto', sans-serif;
+
+// efeito de fundo, cores mudando
+.fundo {
+    height: 100%; 
+    width: 100%;
+    // a segunda cor é a que mais tem relevância
+    background: linear-gradient(45deg, #080f1f, #495ba0, #efeada, #a7ddcb);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+// efeito de titulo com gradiente
+/*
+.titulo{
+    font-family: $fonte-primaria;
+    background: linear-gradient(to right,);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 5s linear infinite;
+}
+*/
+
+
+.fonte{
+    font-family: $fonte-primaria;
+}
+
+// efeito para o titulo
+/*
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
+*/
+
+
+// efeito de carregamento da página
+.fade-in-down {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInDown 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
